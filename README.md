@@ -6,7 +6,7 @@ Challenge your luck and track your score as you play against the computer with s
 ---
 
 ### Live Demo
-[https://www.linkedin.com/in/sagarpani/](https://sagarpani.github.io/Rock_Paper_Scissors/)
+[https://sagarpani.github.io/Rock_Paper_Scissors](https://sagarpani.github.io/Rock_Paper_Scissors/)
 
 ---
 
@@ -58,10 +58,10 @@ Challenge your luck and track your score as you play against the computer with s
     -Store scores using localStorage
     -Add restart and reset buttons
 
-### Author
-    Sagar Pani
-    Frontend Developer | Learner | Builder
-    Connect on GitHub
-    [Github](https://github.com/sagarpani)
-    Connect on Linkedin
-    [LinkedIn](https://www.linkedin.com/in/sagarpani)
+ Author:
+    Sagar Pani<br>
+    Frontend Developer | Learner | Builder<br>
+Connect on Github<br>
+[https://github.com/sagarpani](https://github.com/sagarpani)<br>
+Connect on Linkedin<br>
+[https://www.linkedin.com/in/sagarpani](https://www.linkedin.com/in/sagarpani)
