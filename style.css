@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(120deg, #5f13c9, #511e93, #770fbd);
+    background-size: 300% 300%;
+    animation: smoothGradient 15s ease-in-out infinite;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes smoothGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:nth-child(1) {
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    ;
+    color: #fff;
+}
+
+button:nth-child(1):hover {
+    box-shadow: 0 0 25px #ff5e62;
+}
+
+button:nth-child(2) {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    color: #fff;
+}
+
+button:nth-child(2):hover {
+    box-shadow: 0 0 25px #5b86e5;
+}
+
+button:nth-child(3) {
+    background: linear-gradient(45deg, #7f00ff, #e100ff);
+    color: #fff;
+}
+
+button:nth-child(3):hover {
+    box-shadow: 0 0 25px #e100ff;
+}
+
+
+#result-box {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    display: none;
+    text-align: center;
+}
