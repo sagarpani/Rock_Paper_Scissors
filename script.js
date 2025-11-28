@@ -1,6 +1,6 @@
 
 let result, computerMove;
-let score = { win: 0, lost: 0, tie: 0 };
+let score = { win: 0, loss: 0, tie: 0 };
 
 function pickComputerMove() {
 
@@ -15,6 +15,23 @@ function pickComputerMove() {
         return 'scissors';
     }
 }
+document.getElementById('rock').addEventListener('click', function(){
+    play('rock');
+});
+document.getElementById('paper').addEventListener('click', function(){
+    play('paper')
+});
+document.getElementById('scissors').addEventListener('click', function(){
+    play('scissors')
+});
+
+// document.getElementById('reset').addEventListener(
+//     'click', function(){
+//         score.win = 0;
+//         score.loss = 0;
+//         score.tie = 0;
+//     }
+// );
 
 function playGames(humanMove) {
 
@@ -23,7 +40,7 @@ function playGames(humanMove) {
     else if (
         (humanMove === 'rock' && computerMove === 'scissors') || (humanMove === 'paper' && computerMove === 'rock') || (humanMove === 'scissors' && computerMove === 'paper')
     ) result = 'win';
-    else result = 'lost';
+    else result = 'loss';
     return { result, computerMove };
 }
 
@@ -36,6 +53,6 @@ function play(choice) {
                 Your choice: <strong>${choice}</strong><br>
                 Computer choice: <strong>${computerMove}</strong><br>
                 Result: <strong>${result.toUpperCase()}</strong><br>
-                Wins: ${score.win} || Losses: ${score.lost} || Ties: ${score.tie}
+                Wins: ${score.win} || Losses: ${score.loss} || Ties: ${score.tie}
             `;
 }
